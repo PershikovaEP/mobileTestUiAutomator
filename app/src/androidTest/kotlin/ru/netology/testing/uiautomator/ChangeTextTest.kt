@@ -127,7 +127,6 @@ class ChangeTextTest {
 
         device.findObject(By.res(MODEL_PACKAGE, "userInput")).text = textToSet
         device.findObject(By.res(MODEL_PACKAGE, "buttonActivity")).click()
-
         waitForPackage(MODEL_PACKAGE)
 
         val result = device.findObject(By.res(MODEL_PACKAGE, "text")).text
